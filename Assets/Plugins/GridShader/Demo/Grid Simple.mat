@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Grid Simple
+  m_Shader: {fileID: 4800000, guid: ae5e68a9703054b40aa016962e4fac13, type: 3}
+  m_ShaderKeywords: _FACENORMALS _FIXEDWIDTH_ON _QUADIFY _VERTEXNORMALS _VERTEXTANGENTS
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BumpScale: 1
+    - _CullMode: 1
+    - _CutPlane: 0
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _FaceNormals: 1
+    - _FaceNormalsLength: 0.4
+    - _FaceNormalsThickness: 0.008
+    - _FixedWidth: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _GraduationScale: 1
+    - _Length: 0.24
+    - _Metallic: 0
+    - _Mode: 0
+    - _Nuance: 0.637
+    - _OcclusionStrength: 1
+    - _Opacity: 0.853
+    - _Parallax: 0.02
+    - _Quadify: 1
+    - _Scale: 0.0021988514
+    - _SecondaryFadeInSpeed: 1.86
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Thickness: 0.00725
+    - _UVSec: 0
+    - _VertexNormals: 1
+    - _VertexNormalsLength: 0.21
+    - _VertexNormalsThickness: 0.008
+    - _VertexTangents: 1
+    - _VertexTangentsLength: 0.16
+    - _VertexTangentsThickness: 0.008
+    - _WireframeSmoothing: 1.29
+    - _WireframeThickness: 0.13
+    - _ZWrite: 1
+    m_Colors:
+    - _BackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EdgeColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FaceNormalColor: {r: 1, g: 0, b: 0, a: 0.5647059}
+    - _FaceNormalsColor: {r: 1, g: 0, b: 0, a: 0.4745098}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Plane: {r: 1, g: 0, b: 0, a: 0.27}
+    - _SecondaryColor: {r: 1, g: 1, b: 1, a: 1}
+    - _VertexNormalColor: {r: 0, g: 1, b: 0, a: 1}
+    - _VertexNormalsColor: {r: 0.05724919, g: 1, b: 0, a: 0.4117647}
+    - _VertexTangentsColor: {r: 0, g: 0, b: 1, a: 1}
