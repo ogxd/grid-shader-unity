@@ -83,6 +83,11 @@
             return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
          }
 
+         // Apply the calculated scale
+         float applyScale(float base, float scale) {
+            return floor(frac((base - 0.5 * _Thickness) * scale) + _Thickness * scale);
+         }
+
          fixed4 frag (v2f i) : SV_Target
          {
             fixed4 col = _MainColor;
@@ -105,14 +110,14 @@
 
             float2 pos;
 
-            pos.x = floor(frac((i.uv.x - 0.5 * _Thickness) * localScale) + _Thickness * localScale);
-            pos.y = floor(frac((i.uv.y - 0.5 * _Thickness) * localScale) + _Thickness * localScale);
+            pos.x = applyScale(i.uv.x, localScale);
+            pos.y = applyScale(i.uv.y, localScale);
 
             if (pos.x == 1 || pos.y == 1) {
                col.a = max((1 - fade), fade);
             } else {
-               pos.x = floor(frac((i.uv.x - 0.5 * _Thickness) * 10.0 * localScale) + _Thickness * 10.0 * localScale);
-               pos.y = floor(frac((i.uv.y - 0.5 * _Thickness) * 10.0 * localScale) + _Thickness * 10.0 * localScale);
+               pos.x = applyScale(i.uv.x, 10.0 * localScale);
+               pos.y = applyScale(i.uv.y, 10.0 * localScale);
 
                if (pos.x == 1 || pos.y == 1) {
                   col = _SecondaryColor;
