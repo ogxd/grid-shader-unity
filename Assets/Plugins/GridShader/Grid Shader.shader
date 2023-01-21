@@ -45,9 +45,6 @@
             UNITY_VERTEX_OUTPUT_STEREO
          };
 
-         sampler2D _GridTexture;
-         float4 _GridTexture_ST;
-			
          sampler2D _MaskTexture;
          float4 _MaskTexture_ST;
 
