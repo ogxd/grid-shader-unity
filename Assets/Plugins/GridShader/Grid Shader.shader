@@ -90,7 +90,7 @@
 
          fixed4 frag (v2f i) : SV_Target
          {
-            fixed4 col = _MainColor;
+            fixed4 col;
             fixed4 maskCol = tex2D(_MaskTexture, i.uv1);
 				
             // With the ceil value of the log10 of the scale, we obtain the closest measure unit above (eg : 165 -> 3, 0.146 -> 0, 0.001 -> -3)
@@ -114,6 +114,7 @@
             pos.y = applyScale(i.uv.y, localScale);
 
             if (pos.x == 1 || pos.y == 1) {
+               col = _MainColor;
                col.a = max((1 - fade), fade);
             } else {
                pos.x = applyScale(i.uv.x, 10.0 * localScale);
