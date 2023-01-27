@@ -2,7 +2,7 @@
 {
    Properties
    {
-      _MainColor("Main Color", Color) = (0.5, 1.0, 1.0)
+      _Color("Main Color", Color) = (0.5, 1.0, 1.0)
       _SecondaryColor("Secondary Color", Color) = (0.0, 0.0, 0.0)
       _BackgroundColor("Background Color", Color) = (0.0, 0.0, 0.0, 0.0)
       _MaskTexture("Texture", 2D) = "white" {}
@@ -57,7 +57,7 @@
          float _Thickness;
          float _SecondaryFadeInSpeed;
 
-         fixed4 _MainColor;
+         fixed4 _Color;
          fixed4 _SecondaryColor;
          fixed4 _BackgroundColor;
 
@@ -114,7 +114,7 @@
             pos.y = applyScale(i.uv.y, localScale);
 
             if (pos.x == 1 || pos.y == 1) {
-               col = _MainColor;
+               col = _Color;
                col.a = max((1 - fade), fade);
             } else {
                pos.x = applyScale(i.uv.x, 10.0 * localScale);
